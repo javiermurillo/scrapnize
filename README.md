@@ -1,4 +1,4 @@
-## Simplnize App
+## ScrapnizeApp
 #### An example to use Mechanize and show how it works
 
 #### Install
