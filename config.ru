@@ -3,4 +3,4 @@ require 'bundler'
 require 'mechanize'
 Bundler.require
 require './app'
-run SimplnizeApp
+run ScrapnizeApp

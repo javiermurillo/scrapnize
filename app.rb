@@ -1,5 +1,5 @@
 
-class SimplnizeApp < Sinatra::Base
+class ScrapnizeApp < Sinatra::Base
   get '/' do
     agent = Mechanize.new
     "Hola #{agent.get("https://google.com").title}"
