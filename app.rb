@@ -1,9 +1,9 @@
 class ScrapnizeApp < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
+    set :haml, :format => :html5
   end
   get '/' do
-    agent = Mechanize.new
-    "Hello title: #{agent.get("https://google.com").title}"
+    haml :index
   end
 end

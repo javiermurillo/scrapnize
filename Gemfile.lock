@@ -4,6 +4,8 @@ GEM
     backports (3.6.0)
     domain_name (0.5.19)
       unf (>= 0.0.5, < 1.0.0)
+    haml (4.0.5)
+      tilt
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     mechanize (2.7.3)
@@ -49,6 +51,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   mechanize
   sinatra
   sinatra-contrib
