@@ -1,4 +1,2 @@
--agent = Mechanize.new
--agent.get("https://google.com") do |page|
-  ="El sitio tiene #{page.forms.count} forms,"
-  ="El sitio tiene #{page.links.count} links"
+%form{method: 'POST', action: "/site"}
+  %input{name: "page[url]"}
