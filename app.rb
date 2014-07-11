@@ -6,4 +6,10 @@ class ScrapnizeApp < Sinatra::Base
   get '/' do
     haml :index
   end
+
+  post '/site' do
+    @agent = Mechanize.new
+    @agent.get(params[:page][:url])
+    haml :site
+  end
 end
