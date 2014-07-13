@@ -9,7 +9,7 @@ class ScrapnizeApp < Sinatra::Base
 
   post '/site' do
     @agent = Mechanize.new
-    @agent.user_agent = "Rich Explorer"
+    @agent.user_agent = params[:page][:user_agent]
     @agent.get(params[:page][:url])
     haml :site
   end
